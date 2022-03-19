@@ -1,0 +1,134 @@
+*{margin: 0; padding: 0; font-family: '맑은고딕',sans-serif;}
+a{text-decoration: none; color: #333;}
+li,ul{list-style: none;}
+
+/*공통*/
+
+.container{width: 1200px;}
+.m-auto{margin: 0 auto;}
+.d-flex{display: flex;}
+.d-none{display: none;}
+.d-block{display: block;}
+.abs{position: absolute;}
+.rel{position: relative;}
+.fix{position: fixed;}
+.h100{height: 100px;}
+.h200{height: 200px;}
+.h300{height: 300px;}
+
+.w-100{width: 100%;}
+.align-center{align-items: center;}
+.justify-between{justify-content: space-between;}
+
+/*header*/
+.d1li .d1a{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 2;
+    min-width: 100px;
+}
+.d1li:hover .d1a{
+    background-color: pink;
+    color: white;
+}
+
+.d2ul{
+    z-index: 10000;
+    height: 0;
+    overflow: hidden;
+    top: 100%;
+    line-height: 2;
+    left: 0; right: 0;
+    background-color: white;
+    font-size: 18px;
+    text-align: center;
+    transition: height 1s;
+}
+
+#gnb:hover .d2ul{
+    height: 180px;
+}
+
+.d2ul li:hover {
+    background-color: pink;
+}
+.d2ul li:hover a{
+    color: white;
+}
+
+/*slider*/
+#slider{
+    overflow: hidden;
+    }
+
+/*tab*/
+#maincon > div {
+    width: 33.333%;
+    align-items: top;
+}
+
+.tab h3{
+    font-size: 22px;
+    line-height: 2;
+    align-items: center;
+    padding: 0 10px;
+    cursor: pointer;
+}
+.tab ul{
+    top:40px;
+    left: 0;
+    line-height: 1.8;
+    display: none;
+}
+.tab h3 {margin-top: 10px;}
+.tab ul {margin-top: 10px;}
+.notice li a{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 230px;
+    overflow: hidden;
+    display: inline-block;
+    font-size: 20px;
+}
+.notice li span{
+    font-size: 20px;
+}
+.notice li{display: flex;
+    justify-content: space-between;}
+
+.dis-fc {flex-direction :column;}
+.tab > div.on ul{display: flex;}
+
+.gallery img{width: 100%;}
+.gallery li {padding: 0 2px;}
+
+/*ft*/
+#ft{background-color: lightgray;}
+
+/*modal*/
+#modal{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto; /*width,height 값이 없을 경우는 transform으로 움직이기*/
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    text-align: center;
+    border: 1px solid black;
+} 
+
+#modal{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto; /*width,height 값이 없을 경우는 transform으로 움직이기*/
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    text-align: center;
+    border: 1px solid black;
+} 
